@@ -1,0 +1,63 @@
+#test {
+  width:600px;
+  height:572px;
+  margin:auto;
+  margin-top:75px;
+}
+
+body {
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:14px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:#ffffff;
+}
+
+#profile section {
+  display:inline-block;
+  vertical-align:middle;
+}
+
+img {
+  height:120px;
+  vertical-align:middle;
+  margin-right:4rem;
+  width:12rem;
+  border-color:transparent;
+}
+
+#navigationbar {
+  width:70%;
+  list-style-type:none;
+  margin:auto;
+  padding:0;
+}
+
+#navigationbar li {
+  display:inline;
+}
+
+#navigationbar li a {
+  color:#333;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+}
+
+#navigationbar li a:hover {
+  color:#333;
+  /*background-color:#111;*/
+}
+
+#Footer li {
+  font-size:small;
+  font-weight:bold;
+  width:24%;
+  height:30px;
+  margin:auto;
+}
+
+#Footer li i {
+  padding-right:10px;
+}
+
