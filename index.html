@@ -12,42 +12,69 @@
 </head>
 
 <body>
-    <div id="test">
+    <div id="outer">
         <div>
-            <div id="profile"><img src="assets/img/IMG_2882.jpg" class="img-circle">
-                <section>
-                    <h1>Stijn Smit</h1>
-                    <p>iOS App Developer</p>
-                </section>
-            </div>
-            <section>
-                <hr>
-                <ul id="navigationbar">
-                    <li><a href="#">Home </a><a href="#">About </a><a href="#">Blog </a><a href="#">Projects </a><a href="#">Contact </a></li>
-                </ul>
-                <hr>
+            <section class="element">
+		<div id="profileCard">
+		    <img src="assets/img/IMG_2882.jpg" class="img-circle" alt="ProfilePicture">
+		    <div>
+			<h1>Stijn Smit</h1>
+			<p>iOS App Developer</p>
+		    </div>
+		</div>
             </section>
-            <section id="about">
-                <p>Hey, I’m an independent web &amp; software developer from Dublin, Ireland. I work primarily with&nbsp;<a href="http://emberjs.com/">Ember.js</a> and&nbsp;<a href="https://www.djangoproject.com/">Django</a>.Have a look through some of my&nbsp;
-                    <a
-                    href="https://timmyomahony.com/projects/">projects</a> and&nbsp;<a href="https://timmyomahony.com/blog/">blog posts</a>. Need help with an upcoming project or application? Learn a bit more&nbsp;<a href="https://timmyomahony.com/about/">about me</a> and then consider&nbsp;
-                        <a
-                        href="https://timmyomahony.com/hire-me/">hiring me</a>. </p>
+            <section class="element">
+		<div id="nav">
+		    <hr>
+		    <ul id="navigationBar" class="element">
+			<li><a href="#" id="homeButton">Home </a></li>
+			<li><a href="#" id="aboutButton">About </a></li>
+			<li><a href="#" id="blogButton">Blog </a></li>
+			<li><a href="#" id="projectsButton">Projects </a></li>
+			<li><a href="#" id="contactButton">Contact </a></li>
+		    </ul>
+		    <hr>
+		</div>
+	    </section>
+            <section id="content" class="element">
+		<div id="contentHome">
+		    <p>
+			Hey, I'm an iOS app developer from Laren, Netherlands.
+			I currently work for <a href="sportunity.nu">SportUnity</a>, and make iOS apps in Xcode with <a href="https://developer.apple.com/swift/">Swift</a>.
+			Have a look through some of the products made at SportUnity, or my own personal projects.
+			Need help with an upcoming project or application?
+			Learn a bit more about me and contact me if you like what you see 
+		    </p>
+		</div>
+		<div id="contentAbout">
+		    <p>
+			Ik werk momenteel bij SportUnity, heb mijn eigen bedrijfje StijnSmit en ben erg actief bij stichting DynamicArts
+		    </p>
+		</div>
+		<div id="contentBlog">
+		    <p>
+			test!!
+		    </p>
+		</div>
             </section>
-            <section id="Footer">
-                <ul class="list-inline">
-                    <li><i class="fa fa-envelope"></i>Email </li>
-                    <li><i class="fa fa-stack-overflow"></i>Stack Overflow</li>
-                    <li><i class="fa fa-bitbucket"></i>Bitbucket </li>
-                    <li><i class="fa fa-skype"></i>Skype </li>
-                    <li><i class="fa fa-github"></i>Github </li>
-                    <li><i class="fa fa-twitter"></i>Twitter</li>
-                    <li><i class="fa fa-linkedin"></i>LinkedIn</li>
-                </ul>
+	    <hr>
+            <section class="element">
+		<div id="footer">
+		    <ul class="list-inline">
+			<li><a href="stijn@stijnsmit.com"><i class="fa fa-envelope"></i>Email</a></li>
+			<li><a href="https://bitbucket.org/StijnSmit/"><i class="fa fa-bitbucket"></i>Bitbucket</a></li>
+			<li><i class="fa fa-skype"></i>Skype </li>
+			<li><a href="https://github.com/StijnSmit"><i class="fa fa-github"></i>Github</a></li>
+			<li><a href="https://twitter.com/StijnSmit1"><i class="fa fa-twitter"></i>Twitter</a></li>
+			<li><a href="https://www.linkedin.com/in/stijn-smit-674384126/"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+		    </ul>
+		</div>
             </section>
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

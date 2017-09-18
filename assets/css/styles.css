@@ -1,10 +1,26 @@
-#test {
-  width:600px;
-  height:572px;
+h1 {
+}
+p {
+    font-size: medium;
+}
+a {
+    font-size: medium;
+}
+/* Outer View */
+#outer {
+  width:700px;
+/*  height:572px; */
   margin:auto;
   margin-top:75px;
 }
 
+@media (max-width:767px) {
+  #outer {
+    width:350px;
+  }
+}
+
+/* Body */
 body {
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:14px;
@@ -13,43 +29,54 @@ body {
   background-color:#ffffff;
 }
 
-#profile section {
+.element {
+  margin:18px 0px 18px 0px;
+}
+
+hr {
+  margin:0;
+}
+
+/* ProfileCard */
+#profileCard div {
   display:inline-block;
   vertical-align:middle;
 }
 
-img {
-  height:120px;
+#profileCard img {
+  height:14rem;
+  width:14rem;
   vertical-align:middle;
   margin-right:4rem;
-  width:12rem;
   border-color:transparent;
 }
 
-#navigationbar {
-  width:70%;
+/* navigationBar */
+#navigationBar{
   list-style-type:none;
-  margin:auto;
   padding:0;
 }
 
-#navigationbar li {
+#navigationBar li {
   display:inline;
-}
-
-#navigationbar li a {
-  color:#333;
   text-align:center;
-  padding:14px 16px;
+  padding-left:10px;
+  padding-right:10px;
   text-decoration:none;
 }
 
-#navigationbar li a:hover {
+#navigationBar li a {
   color:#333;
-  /*background-color:#111;*/
 }
 
-#Footer li {
+/* content */
+#content section {
+  margin-left:10px;
+  display:inline-block;
+}
+
+/* footer */
+#footer li {
   font-size:small;
   font-weight:bold;
   width:24%;
@@ -57,7 +84,11 @@ img {
   margin:auto;
 }
 
-#Footer li i {
+#footer a {
+    color: inherit;
+}
+
+#footer li i {
   padding-right:10px;
 }
 
